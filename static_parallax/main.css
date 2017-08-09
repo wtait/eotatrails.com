@@ -1,0 +1,208 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.sticky {
+  padding: 1em;
+  background: white; 
+  color: white; 
+  width: 100%; 
+  margin: 0;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  z-index: 2;
+}
+
+.sticky.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+  .yoda {
+    left: 0;
+    top: 0;
+    opacity: .2
+}  
+
+  #logo-badge {
+    display: block;
+    margin: 0 auto;
+    max-height: 40%
+}  
+
+#page-above {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    color: white;
+}
+
+.faded-splash {
+    color: black;
+}
+
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto; 
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(media/rider.jpg) no-repeat;
+  background-size: cover;
+}
+
+video {
+  display: block;
+}
+
+ /* @media screen and (max-device-width: 800px) {
+  html {
+    background: url(media/rider.jpg) #000 no-repeat center center fixed;
+  }
+  #bgvid {
+    display: none;
+  }
+}  */
+
+video#bgvid {
+  transition: 1s opacity;
+}
+
+.stopfade {
+  opacity: .1;
+}
+
+button#vidpause {
+  position: relative;
+  z-index: 5;
+  background-color: transparent;
+  color: #cccccc;
+  border: #cccccc;
+  outline-color: #cccccc;
+  font-family: 'Amatic SC', cursive;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  /* opacity: 0.65;  */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-color: transparent;
+}
+
+.bgimg-2 {
+  z-index: 3;
+  background-image: url("media/worker.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  z-index: 3;
+  background-image: url("media/classroom.jpg");
+  min-height: 400px;
+}
+
+.banner {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  /* opacity: 0.7; */
+  color: #111;
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.headline {
+  position: relative;
+  z-index: 5;
+  background-color: transparent
+}
+
+
+div.gallery {
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+ * {
+    box-sizing: border-box;
+} 
+
+ .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+         margin: 6px 0; 
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+} 
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.jumbo {
+    font-size: 10vh;
+}
+
+/* mouse over link */
+.scroll-link, a, a:link, a:active, a:visited, a:focus, a:hover {
+    color: inherit !important;
+    text-decoration: none !important;
+}
