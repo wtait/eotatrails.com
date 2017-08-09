@@ -101,6 +101,12 @@ button#vidpause {
   font-family: 'Amatic SC', cursive;
 }
 
+.btn-collapse {
+  background-color: transparent;
+  color: #cccccc;
+  border: #cccccc;
+}
+
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
@@ -205,4 +211,20 @@ div.desc {
 .scroll-link, a, a:link, a:active, a:visited, a:focus, a:hover {
     color: inherit !important;
     text-decoration: none !important;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.volunteer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.volunteer li {
+display: inline;
 }
